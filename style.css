@@ -16,7 +16,7 @@ body {
 
 .hero {
   position: relative;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   color: white;
 }
@@ -25,7 +25,9 @@ body {
 .hero__bg {
   display: block;
   width: 100vw;
+  height: 80vw;
   height: auto;
+  padding-top: 5vw;
 }
 
 
@@ -37,7 +39,7 @@ body {
   left: 0;
   right: 0;
   padding: 0 40px;
-  z-index: 1;
+  z-index: 1;;
 }
 
 .hero__content {
