@@ -65,11 +65,71 @@ body {
   border-radius: 20px;
   cursor: pointer;
   font-size: 2em;
+    display: inline-block;   /* pour que le padding fonctionne bien sur <a> */
+  text-decoration: none;   /* enlève le soulignement */
+  color: black;            /* ou la couleur de ton choix */
 }
 
 .bouton__nav:hover {
   background-color: #138A8A;
 }
+
+.section-about {
+  padding: 80px 10vw;
+  background-color: #62629D;       /* ou couleur de ta maquette */
+  color: white;
+}
+
+.section-about__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Titre ancre */
+.section-about__title {
+  font-family: "VT323", monospace;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+}
+
+/* Deux colonnes texte / côté */
+.section-about__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;  /* large texte + colonne latérale */
+  gap: 40px;
+}
+
+.section-about__text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.section-about__side {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  /* par ex : encadré si Figma montre une carte */
+  padding: 20px;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive : une colonne en mobile */
+@media (max-width: 768px) {
+  .section-about {
+    padding: 60px 6vw;
+  }
+
+  .section-about__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .section-about__title {
+    font-size: 2.2rem;
+    margin-bottom: 24px;
+  }
+}
+
 
 
 
