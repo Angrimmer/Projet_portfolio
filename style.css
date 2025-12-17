@@ -65,9 +65,9 @@ body {
   border-radius: 20px;
   cursor: pointer;
   font-size: 2em;
-    display: inline-block;   /* pour que le padding fonctionne bien sur <a> */
-  text-decoration: none;   /* enlève le soulignement */
-  color: black;            /* ou la couleur de ton choix */
+    display: inline-block;   
+  text-decoration: none;   
+  color: black;            
 }
 
 .bouton__nav:hover {
@@ -76,7 +76,7 @@ body {
 
 .section-about {
   padding: 80px 10vw;
-  background-color: #62629D;       /* ou couleur de ta maquette */
+  background-color: #62629D;       
   color: white;
 }
 
@@ -131,7 +131,7 @@ body {
 
 .section-hobbies__grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));  /* 3 colonnes comme sur ta maquette */
+  grid-template-columns: repeat(3, minmax(0, 1fr));  
   gap: 24px;
 }
 
