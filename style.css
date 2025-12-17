@@ -65,11 +65,127 @@ body {
   border-radius: 20px;
   cursor: pointer;
   font-size: 2em;
+    display: inline-block;   /* pour que le padding fonctionne bien sur <a> */
+  text-decoration: none;   /* enlève le soulignement */
+  color: black;            /* ou la couleur de ton choix */
 }
 
 .bouton__nav:hover {
   background-color: #138A8A;
 }
+
+.section-about {
+  padding: 80px 10vw;
+  background-color: #62629D;       /* ou couleur de ta maquette */
+  color: white;
+}
+
+.section-about__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+.section-about__title {
+  font-family: "VT323", monospace;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+}
+
+
+.section-about__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr; 
+  gap: 40px;
+}
+
+.section-about__img {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.section-about__side {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.section-hobbies {
+  padding: 60px 10vw 80px;
+  background-color: #62629D;        
+  color: white;
+}
+
+.section-hobbies__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-hobbies__title {
+  font-family: "VT323", monospace;
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+.section-hobbies__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));  /* 3 colonnes comme sur ta maquette */
+  gap: 24px;
+}
+
+.hobby-card {
+  padding: 20px 18px;
+  border-radius: 14px;
+  background-color: rgba(0, 0, 0, 0.25); /* petit bloc sombre translucide */
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.hobby-card__title {
+  font-family: "VT323", monospace;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.hobby-card__text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsive : 1 ou 2 colonnes sur mobile/tablette */
+@media (max-width: 900px) {
+  .section-hobbies__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .section-hobbies {
+    padding: 40px 6vw 60px;
+  }
+
+  .section-hobbies__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-about {
+    padding: 60px 6vw;
+  }
+
+  .section-about__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .section-about__title {
+    font-size: 2.2rem;
+    margin-bottom: 24px;
+  }
+}
+
 
 
 

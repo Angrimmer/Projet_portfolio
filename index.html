@@ -1,36 +1,102 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-<header class="hero">
-  <img src="images/gif_header.gif" alt="" class="hero__bg">
+  <body>
+    <header class="hero">
+      <img src="images/gif_header.gif" alt="" class="hero__bg" />
 
-  <nav class="hero__nav">
-    <button class="bouton__nav">Qui suis-je ?</button>
-    <button class="bouton__nav">Dispo ?</button>
-    <button class="bouton__nav">Mes projets</button>
-    <button class="bouton__nav">Bonus</button>
-  </nav>
+      <nav class="hero__nav">
+        <a href="#qui_suis_je" class="bouton__nav">Qui suis-je ?</a>
+        <button class="bouton__nav">Dispo ?</button>
+        <button class="bouton__nav">Mes projets</button>
+        <button class="bouton__nav">Bonus</button>
+      </nav>
 
-  <div class="hero__content">
-    <h1>HERAMBOURG Alexandre,<br>développeur web et web mobile</h1>
-  </div>
-</header>
+      <div class="hero__content">
+        <h1>HERAMBOURG Alexandre,<br />développeur web et web mobile</h1>
+      </div>
+    </header>
 
+    <section id="qui-suis-je" class="section-about">
+      <div class="section-about__inner">
+        <h2 class="section-about__title">Qui suis-je ?</h2>
 
-<h2>test test test</h2>
+        <div class="section-about__grid">
+          <div class="section-about__img">
+            <img src="images/Bonhomme_qui_salue.gif" alt="bonjour" />
+          </div>
 
+          <div class="section-about__side">
+            <p>
+              Bonjour ! <br />
+              Mon nom est Alexandre et je suis un jeune développeur web & web
+              mobile qui sors de formation. <br />
+              blablabla à voir quoi ajouter <br />
+              J'espère que nous aurons l'occasion de travailler ensemble à
+              l'avenir ;)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-hobbies">
+      <div class="section-hobbies__inner">
+        <h3 class="section-hobbies__title">Loisirs & inspirations</h3>
 
-</body>
+        <div class="section-hobbies__grid">
+          <article class="hobby-card">
+            <h4 class="hobby-card__title">Jeux vidéo & de rôle</h4>
+            <p class="hobby-card__text">
+              Exploration, narration interactive, univers imaginaires qui
+              nourrissent ma créativité et mon sens du détail.
+            </p>
+          </article>
 
+          <article class="hobby-card">
+            <h4 class="hobby-card__title">Musique</h4>
+            <p class="hobby-card__text">
+              Playlist en fond en quasi permanence, j'ai aussi trois guitares,
+              même si elles prennent actuellement un peu la poussière...
+            </p>
+          </article>
+
+          <article class="hobby-card">
+            <h4 class="hobby-card__title">Inspiration web</h4>
+            <p class="hobby-card__text">
+              Passionné par le milieu de l'internet et assez nerd sur les bords,
+              je traine souvent à la recherche de recoins sympathiques sur
+              lesquels m'inspirer !
+            </p>
+          </article>
+
+          <article class="hobby-card">
+            <h4 class="hobby-card__title">Sport</h4>
+            <p class="hobby-card__text">
+              Ancien rugbymen et lutteur, je pratique encore la musculation afin
+              de rester en forme !
+            </p>
+          </article>
+
+          <article class="hobby-card">
+            <h4 class="hobby-card__title">Codage</h4>
+            <p class="hobby-card__text">
+              Même si ce n'est clairement pas toujours simple, coder reste particulièrement amusant
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
